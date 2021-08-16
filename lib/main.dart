@@ -10,149 +10,96 @@ void main(){
 }
 
 class HomePage extends StatelessWidget{
+
+
   @override
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 100,
-        backgroundColor: Colors.black,
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
+        appBar: AppBar(
+          toolbarHeight: 100,
+          backgroundColor: Colors.black,
+          title: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
 
-            Text("Login/Sign Up",
-              style: TextStyle(fontSize: 12),
-              textAlign: TextAlign.right,
-
-            ),
-            TextField(
-              decoration: InputDecoration(
-                  labelText: "Search for products",
-                  labelStyle: TextStyle(
-                      color: Colors.white
-                  )
-
-
+              Text("Login/Sign Up",
+                style: TextStyle(fontSize: 12),
+                textAlign: TextAlign.right,
 
               ),
-            )
+              TextField(
+                decoration: InputDecoration(
+                    labelText: "Search for products",
+                    labelStyle: TextStyle(
+                        color: Colors.white
+                    )
 
 
 
-
-          ],
-
-
-
-
-        ),
-
-
-        actions: [
-          IconButton( icon:Icon(Icons.shopping_cart_outlined),
-            onPressed: ()=>print("open cart"),),
-        ],
-
-
-
-
-
-
-
-      ),
-      body:   Container(
-        child: Column(
-          children: [
-              new Container(
-child: Row(
-  children: [
-    new Container(
-      height: 80.0,
-      width: 80.0,
-      decoration: new BoxDecoration(
-          image: DecorationImage(
-              image: new NetworkImage("https://pngimg.com/uploads/biscuit/biscuit_PNG80.png"),
-              fit: BoxFit.fill
-          ),
-          shape: BoxShape.circle
-      ),
-    ),
-    new Container(
-      height: 80.0,
-      width: 80.0,
-      decoration: new BoxDecoration(
-          image: DecorationImage(
-              image: new NetworkImage("https://pngimg.com/uploads/biscuit/biscuit_PNG80.png"),
-              fit: BoxFit.fill
-          ),
-          shape: BoxShape.circle
-      ),
-    ),
-
-  ],
-),
-                height: 80.0,
-                width: 80.0,
-                decoration: new BoxDecoration(
-                    image: DecorationImage(
-                        image: new NetworkImage("https://pngimg.com/uploads/biscuit/biscuit_PNG80.png"),
-                        fit: BoxFit.fill
-                    ),
-                    shape: BoxShape.circle
                 ),
-              ),
-            new Container(
-              height: 80.0,
-              width: 80.0,
-              decoration: new BoxDecoration(
-                  image: DecorationImage(
-                      image: new NetworkImage("https://pngimg.com/uploads/biscuit/biscuit_PNG80.png"),
-                      fit: BoxFit.fill
-                  ),
-                  shape: BoxShape.circle
-              ),
-            ),
-            new Container(
-              height: 200.0,
-              width: 200.0,
-              decoration: new BoxDecoration(
-                  image: DecorationImage(
-                      image: new NetworkImage("https://pngimg.com/uploads/biscuit/biscuit_PNG80.png"),
-                      fit: BoxFit.fill
-                  ),
-                  shape: BoxShape.circle
-              ),
-
-            ),
-            Container(
-              height: 200.0,
-              child: new ListView(
-                scrollDirection: Axis.horizontal,
-                children: new List.generate(10, (int index) {
-                  return new Card(
-                    color: Colors.white,
-                    child: new Container(
-                      width: 120.0,
-                      height: 400.0,
+              )
 
 
 
 
-
-
-                    ),
-                  );
-                }),
-              ),
-
-            )
+            ],
 
 
 
+
+          ),
+
+
+          actions: [
+            IconButton( icon:Icon(Icons.shopping_cart_outlined),
+              onPressed: ()=>print("open cart"),),
           ],
+
+
+
+
+
+
+
         ),
+
+        body:   Container(
+
+            child: IntrinsicWidth(
+                child : Column(
+                    children: [
+                      Container(
+                        height: 100.0,
+                        width: MediaQuery.of(context).size.width,
+                        child: new ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: new List.generate(10, (int index) {
+                            return Card(
+                              color: Colors.blue,
+                              child: new Container(
+                                width: 120.0,
+                                height: 100.0,
+
+
+
+
+
+
+
+
+
+                              ),
+
+                            );
+                          }),
+                        ),
+
+                      )
+                    ]
+
+
 /*
         child: Row(
           children: [
@@ -209,20 +156,13 @@ child: Row(
 */
 
 
-
-      ),
-
-
+                )
+            ),
 
 
 
 
-
-
-
-
-
-
+        )
     );
 
 
