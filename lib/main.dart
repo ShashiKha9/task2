@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 void main() {
   runApp(MaterialApp(home: HomePage()));
@@ -178,6 +179,34 @@ class HomePage extends StatelessWidget {
             height: 60,
             width: 80,
           ),
+
+
+                  CarouselSlider(
+                    items: [
+                      Container(
+                        margin: EdgeInsets.all(6.0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8.0),
+                          image: DecorationImage(
+                            image: NetworkImage("https://i.picsum.photos/id/657/200/300.jpg?hmac=EHK6W3Q_p0WAYArHzSre54j6vS3QLdqcMKvty45Bo40"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ],
+                    //Slider Container properties
+                    options: CarouselOptions(
+                      height: 180.0,
+                      enlargeCenterPage: true,
+                      autoPlay: true,
+                      aspectRatio: 16 / 9,
+                      autoPlayCurve: Curves.fastOutSlowIn,
+                      enableInfiniteScroll: true,
+                      autoPlayAnimationDuration: Duration(milliseconds: 800),
+                      viewportFraction: 0.8,
+                    ),
+                  ),
+
           Container(
 
             child: Row(
