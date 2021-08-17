@@ -17,10 +17,11 @@ Widget build(BuildContext context) {
               scrollDirection: Axis.horizontal,
               children: new List.generate(10, (int index) {
                 return new Card(
-                  color: Colors.white,
+                  color: Colors.blue,
                   child: new Container(
                     width: 120.0,
                     height: 400.0,
+                    child: Text("dufhuhf"),
 
 
 
