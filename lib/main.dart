@@ -86,17 +86,28 @@ class HomePage extends StatelessWidget {
                   "Top Saver",
                   style: TextStyle(fontSize: 17),
                 ),
-                RaisedButton(
-                  child: Text(
-                    "See all",
-                    style: TextStyle(fontWeight: FontWeight.w400),
-                  ),
-                  onPressed: () {},
-                  color: Colors.white,
-                  elevation: 10,
-                )
+                TextButton(
+
+                  child: Text("see all",
+                      style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400)),
+                  style: ButtonStyle(
+                      padding: MaterialStateProperty.all<EdgeInsets>(
+                          EdgeInsets.all(6)),
+                      foregroundColor:
+                      MaterialStateProperty.all<Color>(Colors.black),
+                      shape:
+                      MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(4.0),
+                              side: BorderSide(color: Colors.black)))),
+                  onPressed: () => null,
+
+
+                ),
+
               ],
             ),
+            padding: EdgeInsets.all(10),
           ),
 
           //
@@ -145,6 +156,8 @@ class HomePage extends StatelessWidget {
                         color: Colors.teal,
                         onPressed: () {},
                       )
+
+
                     ],
                   ),
 
@@ -176,6 +189,7 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(fontSize: 17),
                 ),
                 TextButton(
+                  
                     child: Text("see all",
                         style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400)),
                     style: ButtonStyle(
@@ -197,7 +211,9 @@ class HomePage extends StatelessWidget {
 
 
               ],
+              
             ),
+            padding: EdgeInsets.all(10),
           ),
 
           Container(
