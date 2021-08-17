@@ -74,10 +74,33 @@ class HomePage extends StatelessWidget {
               //
 
               ),
-          SizedBox(
-            height: 60,
-            width: 80,
-          ),
+
+                  CarouselSlider(
+                    items: [
+                      Container(
+                        margin: EdgeInsets.all(2.0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4.0),
+                          image: DecorationImage(
+                            image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuC7m0FgVRilcrHN3DdsCz_nU-E_fxbiIf0Q&usqp=CAU"),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                    ],
+                    //Slider Container properties
+                    options: CarouselOptions(
+                      height: 120.0,
+                      enlargeCenterPage: true,
+                      autoPlay: true,
+                      aspectRatio: 18 / 12,
+                      autoPlayCurve: Curves.fastOutSlowIn,
+                      enableInfiniteScroll: true,
+                      autoPlayAnimationDuration: Duration(milliseconds: 800),
+                      viewportFraction: 0.8,
+                    ),
+                  ),
+          //
           Container(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -175,31 +198,26 @@ class HomePage extends StatelessWidget {
 
             //
           ),
-          SizedBox(
-            height: 60,
-            width: 80,
-          ),
-
 
                   CarouselSlider(
                     items: [
                       Container(
-                        margin: EdgeInsets.all(6.0),
+                        margin: EdgeInsets.all(2.0),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(4.0),
                           image: DecorationImage(
-                            image: NetworkImage("https://i.picsum.photos/id/657/200/300.jpg?hmac=EHK6W3Q_p0WAYArHzSre54j6vS3QLdqcMKvty45Bo40"),
-                            fit: BoxFit.cover,
+                            image: NetworkImage("https://bharatiya.co/wp-content/uploads/2021/06/DairyAndBakery_900x250-1.png"),
+                            fit: BoxFit.fill,
                           ),
                         ),
                       ),
                     ],
                     //Slider Container properties
                     options: CarouselOptions(
-                      height: 180.0,
+                      height: 120.0,
                       enlargeCenterPage: true,
                       autoPlay: true,
-                      aspectRatio: 16 / 9,
+                      aspectRatio: 18 / 12,
                       autoPlayCurve: Curves.fastOutSlowIn,
                       enableInfiniteScroll: true,
                       autoPlayAnimationDuration: Duration(milliseconds: 800),
@@ -218,8 +236,7 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(fontSize: 17),
                 ),
                 TextButton(
-                  
-                    child: Text("see all",
+                  child: Text("see all",
                         style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400)),
                     style: ButtonStyle(
                         padding: MaterialStateProperty.all<EdgeInsets>(
@@ -294,7 +311,8 @@ class HomePage extends StatelessWidget {
                   ),
 
                   //
-                )
+                ),
+
 
                     //
 
@@ -306,7 +324,132 @@ class HomePage extends StatelessWidget {
 
             //
           ),
-        ])),
+                  CarouselSlider(
+                    items: [
+                      Container(
+                        margin: EdgeInsets.all(2.0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4.0),
+                          image: DecorationImage(
+                            image: NetworkImage("https://flexfitnessclubs.com/wp-content/uploads/2017/07/protein-pic.png"),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                    ],
+                    //Slider Container properties
+                    options: CarouselOptions(
+                      height: 120.0,
+                      enlargeCenterPage: true,
+                      autoPlay: true,
+                      aspectRatio: 18 / 12,
+                      autoPlayCurve: Curves.fastOutSlowIn,
+                      enableInfiniteScroll: true,
+                      autoPlayAnimationDuration: Duration(milliseconds: 800),
+                      viewportFraction: 0.8,
+                    ),
+                  ),
+                  Container(
+
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        new Text(
+                          "Today'Offers",
+                          style: TextStyle(fontSize: 17),
+                        ),
+                        TextButton(
+                          child: Text("see all",
+                              style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400)),
+                          style: ButtonStyle(
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                  EdgeInsets.all(6)),
+                              foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.black),
+                              shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(4.0),
+                                      side: BorderSide(color: Colors.black)))),
+                          onPressed: () => null,
+
+
+                        ),
+
+
+
+
+                      ],
+
+                    ),
+                    padding: EdgeInsets.all(10),
+                  ),
+                  Container(
+                    height: 200.0,
+                    width: MediaQuery.of(context).size.width,
+                    child: new ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: new List.generate(10, (int index) {
+                        return Card(
+                          child: Container(
+                            alignment: Alignment.bottomCenter,
+                            height: 100,
+                            width: 120,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Image(
+                                  image: NetworkImage(
+                                      "https://userguiding.com/wp-content/uploads/2021/03/product-design-books-creative-selection.png"),
+                                  height: 80,
+                                  width: 100,
+                                ),
+                                Text(
+                                  "₹218",
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "Test Product",
+                                  textAlign: TextAlign.justify,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                ),
+                                Text(
+                                  "550g",
+                                  textAlign: TextAlign.left,
+                                ),
+                                RaisedButton(
+                                  child: Text(
+                                    "Add",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  color: Colors.teal,
+                                  onPressed: () {},
+                                )
+                              ],
+                            ),
+
+                            //
+                          ),
+
+
+                          //
+
+                        );
+
+                        //
+                      }),
+                    ), //
+
+                    //
+                  ),
+
+
+                ])),
       ),
     );
   }
