@@ -534,7 +534,14 @@ class HomePage extends StatelessWidget {
               tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
 
               leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
-              subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+              subtitle: Column(
+                children: [
+                  Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+                  Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+                  Text("Pulses and huhudhudhuhuuduhuusduhd sjdjduu bhhjbjj jajdjj sadujbhs",style: TextStyle(fontWeight: FontWeight.bold),),
+
+                ],
+              ),
               textColor: Colors.black,
 
 
@@ -666,7 +673,6 @@ class HomePage extends StatelessWidget {
                 thickness: 4,
 
               ),
-
 
 
 
