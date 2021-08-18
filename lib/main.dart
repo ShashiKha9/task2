@@ -92,7 +92,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
+
                 ],
                 //Slider Container properties
                 options: CarouselOptions(
@@ -436,7 +436,8 @@ class HomePage extends StatelessWidget {
                           children: [
                             Image(
                               image: NetworkImage(
-                                  "https://userguiding.com/wp-content/uploads/2021/03/product-design-books-creative-selection.png"),
+                                  "https://userguiding.com/wp-content/uploads/2021/03/product-design-books-creative-selection.png",
+                              ),
                               height: 80,
                               width: 100,
                             ),
@@ -479,6 +480,7 @@ class HomePage extends StatelessWidget {
                       ),
 
 
+
                       //
 
                     );
@@ -489,7 +491,118 @@ class HomePage extends StatelessWidget {
                 ), //
 
               ),
-              )
+              ),
+
+              Padding(padding: EdgeInsets.all(10)),
+
+            ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+              tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+
+              leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
+              subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+              textColor: Colors.black,
+
+
+
+
+
+
+
+
+
+            ),
+
+              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+                tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+
+                leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
+                subtitle: Text("Grocery & Staples"),
+                textColor: Colors.black,
+
+
+
+
+
+
+
+
+              ),
+            ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+              tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+
+              leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
+              subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+              textColor: Colors.black,
+
+
+
+
+
+
+
+
+
+            ),
+
+
+            //
+            ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+              tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+
+              leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
+              subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+              textColor: Colors.black,
+
+
+
+
+
+
+
+
+
+            ),
+
+
+              //
+              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+                tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+
+                leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
+                subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+                textColor: Colors.black,
+
+
+
+
+
+
+
+
+
+              ),
+
+              //
+              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+                tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+
+                leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
+                subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+                textColor: Colors.black,
+
+
+
+
+
+
+
+
+
+              ),
+
+
+
+
 
 
 
