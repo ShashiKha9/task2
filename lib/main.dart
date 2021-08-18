@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
 
               CarouselSlider(
                 items: [
-                  Container(
+                Container(
                     margin: EdgeInsets.all(2.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4.0),
@@ -92,6 +92,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  
                 ],
                 //Slider Container properties
                 options: CarouselOptions(
@@ -148,6 +149,11 @@ class HomePage extends StatelessWidget {
                     .of(context)
                     .size
                     .width,
+                  child: Scrollbar(
+                    isAlwaysShown: true,
+                    thickness: 4.0,
+                    controller: ScrollController(),
+                    radius: Radius.zero,
                 child: new ListView(
                   scrollDirection: Axis.horizontal,
                   children: new List.generate(10, (int index) {
@@ -203,7 +209,8 @@ class HomePage extends StatelessWidget {
 
                     //
                   }),
-                ), //
+                ),
+                  )//
 
                 //
               ),
@@ -277,7 +284,13 @@ class HomePage extends StatelessWidget {
                     .of(context)
                     .size
                     .width,
-                child: new ListView(
+                  child: Scrollbar(
+                    isAlwaysShown: true,
+                    thickness: 4.0,
+                    controller: ScrollController(),
+                    radius: Radius.zero,
+
+                    child: new ListView(
                   scrollDirection: Axis.horizontal,
                   children: new List.generate(10, (int index) {
                     return Card(
@@ -332,7 +345,8 @@ class HomePage extends StatelessWidget {
 
                     //
                   }),
-                ), //
+                ),
+                  )//
 
                 //
               ),
@@ -403,7 +417,13 @@ class HomePage extends StatelessWidget {
                     .of(context)
                     .size
                     .width,
-                child: new ListView(
+                child: Scrollbar(
+                  isAlwaysShown: true,
+                thickness: 4.0,
+                controller: ScrollController(),
+                radius: Radius.zero,
+
+                child:new ListView(
                   scrollDirection: Axis.horizontal,
                   children: new List.generate(10, (int index) {
                     return Card(
@@ -469,8 +489,9 @@ class HomePage extends StatelessWidget {
                 ), //
 
               ),
-              
-              New(),
+              )
+
+
 
 
             ])),

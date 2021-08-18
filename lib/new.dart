@@ -12,15 +12,32 @@ class New extends StatefulWidget{
 }
 
 class NewState extends State<New>{
-  int i;
-  String MyItem;
+
   @override
   Widget build(BuildContext context) {
     return
    Scrollbar(
      isAlwaysShown: true,
-     child: ListView.builder(itemCount: 10,
-         itemBuilder: (context,index)=>MyItem(i)),
+     child: ListView.builder(itemCount: 100,itemExtent: 100,
+itemBuilder: (context,index){
+       return Container(
+         padding: EdgeInsets.all(8),
+         child: Material(
+           elevation: 4.0,
+           borderRadius: BorderRadius.circular(4.0),
+           color: Colors.green[index%9*100],
+           child: Center(
+             child: Text(index.toString()),
+           ),
+
+         ),
+
+       );
+}
+     )
+
+
+
 
 
 
