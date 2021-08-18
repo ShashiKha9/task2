@@ -530,19 +530,84 @@ class HomePage extends StatelessWidget {
 
 
 
-            ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+            ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan,fontSize: 15),textAlign: TextAlign.center,),
               tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
 
               leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
               subtitle: Column(
                 children: [
                   Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
-                  Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
-                  Text("Pulses and huhudhudhuhuuduhuusduhd sjdjduu bhhjbjj jajdjj sadujbhs",style: TextStyle(fontWeight: FontWeight.bold),),
+                  
+                  Text("Pulses,Atta and other Floures,Rice and other Grains,Dry fruits and nuts,Edible",style: TextStyle(fontSize:12),textAlign:
+
+                  TextAlign.justify,),
 
                 ],
               ),
               textColor: Colors.black,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                      Card(
+
+                        child: Row(
+                          children: [
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+                              
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+
+                          ],
+                          
+                          
+                        ),
+
+                        
+                        
+                      ),
+
+
+
+                  ],
+
+
+                ),
+
+              ],
+             
+              
 
 
 
@@ -553,6 +618,7 @@ class HomePage extends StatelessWidget {
 
 
             ),
+              
              
               Divider(
                 height: 4,
@@ -560,12 +626,86 @@ class HomePage extends StatelessWidget {
 
               ),
 
-              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+
+
+              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan,fontSize: 15),textAlign: TextAlign.center,),
                 tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
 
                 leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
-                subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+                subtitle: Column(
+                  children: [
+                    Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+
+                    Text("Pulses,Atta and other Floures,Rice and other Grains,Dry fruits and nuts,Edible",style: TextStyle(fontSize:12),textAlign:
+
+                    TextAlign.justify,),
+
+                  ],
+                ),
                 textColor: Colors.black,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+
+                        child: Row(
+                          children: [
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+
+                          ],
+
+
+                        ),
+
+
+
+                      ),
+
+
+
+                    ],
+
+
+                  ),
+
+                ],
+
+
 
 
 
@@ -581,14 +721,84 @@ class HomePage extends StatelessWidget {
                 thickness: 4,
 
               ),
-            ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
-              tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
-
-              leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
-              subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
-              textColor: Colors.black,
 
 
+              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan,fontSize: 15),textAlign: TextAlign.center,),
+                tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+
+                leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
+                subtitle: Column(
+                  children: [
+                    Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+
+                    Text("Pulses,Atta and other Floures,Rice and other Grains,Dry fruits and nuts,Edible",style: TextStyle(fontSize:12),textAlign:
+
+                    TextAlign.justify,),
+
+                  ],
+                ),
+                textColor: Colors.black,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+
+                        child: Row(
+                          children: [
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+
+                          ],
+
+
+                        ),
+
+
+
+                      ),
+
+
+
+                    ],
+
+
+                  ),
+
+                ],
 
 
 
@@ -596,7 +806,11 @@ class HomePage extends StatelessWidget {
 
 
 
-            ),
+
+
+
+
+              ),
               Divider(
                 height: 4,
                 thickness: 4,
@@ -604,13 +818,82 @@ class HomePage extends StatelessWidget {
               ),
 
 
-            //
-            ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
-              tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan,fontSize: 15),textAlign: TextAlign.center,),
+                tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
 
-              leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
-              subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
-              textColor: Colors.black,
+                leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
+                subtitle: Column(
+                  children: [
+                    Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+
+                    Text("Pulses,Atta and other Floures,Rice and other Grains,Dry fruits and nuts,Edible",style: TextStyle(fontSize:12),textAlign:
+
+                    TextAlign.justify,),
+
+                  ],
+                ),
+                textColor: Colors.black,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+
+                        child: Row(
+                          children: [
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+
+                          ],
+
+
+                        ),
+
+
+
+                      ),
+
+
+
+                    ],
+
+
+                  ),
+
+                ],
 
 
 
@@ -620,7 +903,9 @@ class HomePage extends StatelessWidget {
 
 
 
-            ),
+
+
+              ),
               Divider(
                 height: 4,
                 thickness: 4,
@@ -629,12 +914,86 @@ class HomePage extends StatelessWidget {
 
 
               //
-              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+
+
+              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan,fontSize: 15),textAlign: TextAlign.center,),
                 tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
 
                 leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
-                subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+                subtitle: Column(
+                  children: [
+                    Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+
+                    Text("Pulses,Atta and other Floures,Rice and other Grains,Dry fruits and nuts,Edible",style: TextStyle(fontSize:12),textAlign:
+
+                    TextAlign.justify,),
+
+                  ],
+                ),
                 textColor: Colors.black,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+
+                        child: Row(
+                          children: [
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+
+                          ],
+
+
+                        ),
+
+
+
+                      ),
+
+
+
+                    ],
+
+
+                  ),
+
+                ],
+
+
 
 
 
@@ -651,13 +1010,84 @@ class HomePage extends StatelessWidget {
 
               ),
 
-              //
-              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
+              ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan,fontSize: 15),textAlign: TextAlign.center,),
                 tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
 
                 leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
-                subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+                subtitle: Column(
+                  children: [
+                    Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
+
+                    Text("Pulses,Atta and other Floures,Rice and other Grains,Dry fruits and nuts,Edible",style: TextStyle(fontSize:12),textAlign:
+
+                    TextAlign.justify,),
+
+                  ],
+                ),
                 textColor: Colors.black,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+
+                        child: Row(
+                          children: [
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                            SizedBox(
+                              height: 10,
+                              width: 10,
+
+
+                            ),
+                            Divider(
+                              height: 5,
+                              thickness: 5,
+                            ),
+
+                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+
+                          ],
+
+
+                        ),
+
+
+
+                      ),
+
+
+
+                    ],
+
+
+                  ),
+
+                ],
+
+
 
 
 
