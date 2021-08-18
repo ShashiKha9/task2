@@ -78,6 +78,11 @@ class HomePage extends StatelessWidget {
                 //
 
               ),
+              Divider(
+                height: 6,
+                thickness: 6,
+
+              ),
 
               CarouselSlider(
                 items: [
@@ -105,6 +110,11 @@ class HomePage extends StatelessWidget {
                   autoPlayAnimationDuration: Duration(milliseconds: 800),
                   viewportFraction: 0.8,
                 ),
+              ),
+              Divider(
+                height: 6,
+                thickness: 6,
+
               ),
               //
               Container(
@@ -214,6 +224,11 @@ class HomePage extends StatelessWidget {
 
                 //
               ),
+              Divider(
+                height: 6,
+                thickness: 6,
+
+              ),
 
               CarouselSlider(
                 items: [
@@ -240,6 +255,11 @@ class HomePage extends StatelessWidget {
                   autoPlayAnimationDuration: Duration(milliseconds: 800),
                   viewportFraction: 0.8,
                 ),
+              ),
+              Divider(
+                height: 6,
+                thickness: 6,
+
               ),
 
               Container(
@@ -350,6 +370,11 @@ class HomePage extends StatelessWidget {
 
                 //
               ),
+              Divider(
+                height: 6,
+                thickness: 6,
+
+              ),
               CarouselSlider(
                 items: [
                   Container(
@@ -375,6 +400,11 @@ class HomePage extends StatelessWidget {
                   autoPlayAnimationDuration: Duration(milliseconds: 800),
                   viewportFraction: 0.8,
                 ),
+              ),
+              Divider(
+                height: 6,
+                thickness: 6,
+
               ),
               Container(
 
@@ -492,8 +522,13 @@ class HomePage extends StatelessWidget {
 
               ),
               ),
+              Divider(
+                height: 6,
+                thickness: 6,
 
-              Padding(padding: EdgeInsets.all(10)),
+              ),
+
+
 
             ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
               tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
@@ -511,12 +546,18 @@ class HomePage extends StatelessWidget {
 
 
             ),
+             
+              Divider(
+                height: 4,
+                thickness: 4,
+
+              ),
 
               ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
                 tilePadding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
 
                 leading: Image(image: NetworkImage("https://i.pinimg.com/736x/a7/64/3e/a7643e981c27aaed1af797d1b7e56eb1.jpg"),),
-                subtitle: Text("Grocery & Staples"),
+                subtitle: Text("Grocery & Staples",style: TextStyle(fontWeight: FontWeight.bold),),
                 textColor: Colors.black,
 
 
@@ -525,6 +566,12 @@ class HomePage extends StatelessWidget {
 
 
 
+
+
+              ),
+              Divider(
+                height: 4,
+                thickness: 4,
 
               ),
             ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
@@ -543,6 +590,11 @@ class HomePage extends StatelessWidget {
 
 
             ),
+              Divider(
+                height: 4,
+                thickness: 4,
+
+              ),
 
 
             //
@@ -562,6 +614,11 @@ class HomePage extends StatelessWidget {
 
 
             ),
+              Divider(
+                height: 4,
+                thickness: 4,
+
+              ),
 
 
               //
@@ -581,6 +638,11 @@ class HomePage extends StatelessWidget {
 
 
               ),
+              Divider(
+                height: 4,
+                thickness: 4,
+
+              ),
 
               //
               ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan),),
@@ -597,6 +659,11 @@ class HomePage extends StatelessWidget {
 
 
 
+
+              ),
+              Divider(
+                height: 4,
+                thickness: 4,
 
               ),
 
