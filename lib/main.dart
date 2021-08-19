@@ -550,81 +550,61 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                       Card(
-
                         child: Row(
                           children: [
                             Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
-                            SizedBox(
-                              height: 10,
-                              width: 10,
-
-                              
-                            ),
-                            Divider(
-                              height: 5,
-                              thickness: 5,
-                            ),
-                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
-                            SizedBox(
-                              height: 10,
-                              width: 10,
-
-
-                            ),
-                            Divider(
-                              height: 5,
-                              thickness: 5,
-                            ),
-                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
-                            SizedBox(
-                              height: 10,
-                              width: 10,
-
-
-                            ),
-                            Divider(
-                              height: 5,
-                              thickness: 5,
-                            ),
-
-                            Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
-
-                          ],
-                          
-                          
-                        ),
-
-                        
-                        
-                      ),
-
-
 
                   ],
 
 
                 ),
-
-              ],
-             
-              
-
-
-
-
-
-
-
 
 
             ),
-              
-             
-              Divider(
-                height: 4,
-                thickness: 4,
+                    Card(
+                      child: Row(
+                        children: [
+                          Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
+                          
 
-              ),
+                        ],
+
+
+                      ),
+
+
+                    ),
+
+                    
+
+
+
+
+
+                  ]
+            ),
+
+                Column(
+                  children: [
+                    Text("Pulses",style: TextStyle(fontSize: 12),),
+                    Text("Up to 60% OFF",style: TextStyle(fontSize: 9),),
+
+
+
+
+                  ],
+                ),
+
+
+
+
+
+
+              ],
+
+            ),
+
+
 
 
 
@@ -913,7 +893,7 @@ class HomePage extends StatelessWidget {
               ),
 
 
-              //
+              //.
 
 
               ExpansionTile(title: Text("Up to 40% OFF",style: TextStyle(color: Colors.cyan,fontSize: 15),textAlign: TextAlign.center,),
@@ -937,6 +917,7 @@ class HomePage extends StatelessWidget {
                     children: [
                       Card(
 
+
                         child: Row(
                           children: [
                             Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
@@ -945,7 +926,9 @@ class HomePage extends StatelessWidget {
                               width: 10,
 
 
+
                             ),
+
                             Divider(
                               height: 5,
                               thickness: 5,
@@ -1111,7 +1094,10 @@ class HomePage extends StatelessWidget {
 
 
             ])),
-      ),
+
+      
+
+    )
     );
   }
 
