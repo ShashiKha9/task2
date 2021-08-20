@@ -2,10 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:task2/new.dart';
+import 'package:task2/onBoard%20Screens.dart';
+import 'HomeScreen.dart';
 
 void main() {
-  runApp(MaterialApp(home: HomePage()));
+  runApp(MaterialApp(home: HomeScreen()));
 }
 
 class HomePage extends StatelessWidget {
@@ -565,7 +566,7 @@ class HomePage extends StatelessWidget {
                       child: Row(
                         children: [
                           Image(image: NetworkImage("https://freepikpsd.com/media/2019/10/pulses-png-3.png"),height: 60,width: 60,),
-                          
+
 
                         ],
 
