@@ -1,23 +1,73 @@
 
+
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:task2/categories.dart';
 
-class HomeScreen extends StatelessWidget{
+class HomePage1 extends StatefulWidget {
+  @override
+  HomeScreen createState() => HomeScreen();
+}
+
+class HomeScreen extends State<HomePage1>{
+  int pageindex = 0;
+  List pageList =  [
+
+  ];
+
+  int _currentIndex = 0;
+
+  void onTabTapped(int index) {
+    setState(() {
+
+      _currentIndex = index;
+
+      onTabTapped(value) {
+        setState(() {
+          pageindex= value;
+        });
+      }
+
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
 return Scaffold(
 
+
   appBar: AppBar(
     backgroundColor: Colors.white,
   actions: [
-    Icon(Icons.location_on_outlined,color: Colors.red,),
+    Icon(Icons.location_on_outlined,color: Colors.red,textDirection: TextDirection.ltr,),
+
 
   ],
 
-  ),
 
-  body: Container(
-    child: SingleChildScrollView(
+  ),
+  bottomNavigationBar: BottomNavigationBar(
+    currentIndex:pageindex,
+      selectedItemColor: Colors.deepOrangeAccent,
+      unselectedItemColor: Colors.grey,
+    type: BottomNavigationBarType.fixed,
+    onTap: onTabTapped,
+      items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home,),label: "Home",),
+        BottomNavigationBarItem(icon: Icon(Icons.category_outlined,),label: "Categories"),
+        BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined,),label: "Cart"),
+        BottomNavigationBarItem(icon: CircleAvatar(
+          backgroundColor: Colors.white,
+          radius: 16,
+          backgroundImage: NetworkImage("https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG.png"),
+        ),label: "User"),
+
+
+      ],
+  ),
+   body:
+    Container(
+      child: SingleChildScrollView(
       child:  Column(
             children: [
               ListTile(
@@ -85,6 +135,7 @@ return Scaffold(
 
                 ],
               ), Container(
+                color: Colors.yellow,
 
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -120,6 +171,7 @@ return Scaffold(
                 padding: EdgeInsets.all(10),
               ),
               Container(
+                color: Colors.yellow,
                 height: 200.0,
                 width: MediaQuery
                     .of(context)
@@ -143,14 +195,12 @@ return Scaffold(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Image(
-                                image: NetworkImage(
-                                  "https://userguiding.com/wp-content/uploads/2021/03/product-design-books-creative-selection.png",
-                                ),
+                                image: AssetImage("images/SeekPng.com_grocery-png_847327.png"),
                                 height: 80,
                                 width: 100,
                               ),
                               Text(
-                                "₹218",
+                                "₹1200",
                                 textAlign: TextAlign.left,
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
@@ -167,6 +217,9 @@ return Scaffold(
                                 textAlign: TextAlign.left,
                               ),
                               RaisedButton(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11)
+                                ),
                                 child: Text(
                                   "Add",
                                   style: TextStyle(color: Colors.white),
@@ -199,18 +252,32 @@ return Scaffold(
                   ), //
 
                 ),
-              ),
+              ),  Container(
+    margin: EdgeInsets.all(10),
+    child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          new Text(
+            "Shop by Category",
+            style: TextStyle(fontSize: 17,fontWeight: FontWeight.w700),
+          ),
 
-
+]
+    )
+),
+            Categories(),
 
             ]
         )
     ),
 
-  )
 
 
 
+
+
+    )
 );
   }
 }

@@ -6,7 +6,7 @@ import 'package:task2/onBoard%20Screens.dart';
 import 'HomeScreen.dart';
 
 void main() {
-  runApp(MaterialApp(home: HomeScreen()));
+  runApp(MaterialApp(home: HomePage1()));
 }
 
 class HomePage extends StatelessWidget {
