@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:task2/categories.dart';
 import 'package:task2/onBoard%20Screens.dart';
 import 'HomeScreen.dart';
 

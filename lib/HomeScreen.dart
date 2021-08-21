@@ -11,22 +11,17 @@ class HomePage1 extends StatefulWidget {
 
 class HomeScreen extends State<HomePage1>{
   int pageindex = 0;
-  List pageList =  [
+  List <Widget>pageList = <Widget> [
+    Categories(),
+
 
   ];
 
-  int _currentIndex = 0;
 
-  void onTabTapped(int index) {
+ onTabTapped( index) {
     setState(() {
 
-      _currentIndex = index;
-
-      onTabTapped(value) {
-        setState(() {
-          pageindex= value;
-        });
-      }
+      pageindex = index;
 
     });
   }
@@ -34,6 +29,7 @@ class HomeScreen extends State<HomePage1>{
   @override
   Widget build(BuildContext context) {
 return Scaffold(
+
 
 
   appBar: AppBar(
@@ -66,7 +62,7 @@ return Scaffold(
       ],
   ),
    body:
-    Container(
+   Container(
       child: SingleChildScrollView(
       child:  Column(
             children: [
@@ -252,7 +248,9 @@ return Scaffold(
                   ), //
 
                 ),
-              ),  Container(
+              ),
+
+              Container(
     margin: EdgeInsets.all(10),
     child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -266,7 +264,122 @@ return Scaffold(
 ]
     )
 ),
-            Categories(),
+              Container(
+    height: 300,
+    child:   GridView.count(crossAxisCount: 2,
+        children: List.generate(4, (index){
+          return
+            Container(
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+            height: 100,
+            width: 100,
+            child: Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(23),
+                    side:BorderSide(color: Colors.deepOrangeAccent)
+                ),
+
+
+                color: Colors.white,
+                child: Row(
+
+                  children: [
+                    Image(image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3dQX2K2cBjXuNIMYl0MHjZA-Krz1etmrniw&usqp=CAU"),height: 40,width: 50,),
+                    Text("Up to 70% off",style: TextStyle(fontSize: 6),),
+                    Text("Up to 70% off",style: TextStyle(fontSize: 6),)
+
+                  ],
+
+
+
+                ),
+
+
+
+
+
+
+            ),
+
+
+
+            );
+
+
+
+
+
+        }
+
+
+
+
+        )
+
+    )
+
+
+),        Container(
+                  margin: EdgeInsets.all(20),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        new Text(
+                          "Best Offer on products",
+                          style: TextStyle(fontSize: 19,fontWeight: FontWeight.w700),
+                        ),
+
+                      ]
+                  )
+              ),
+              Row(
+                children: [
+                  Card(
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 160,
+                          width: 110,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(image: NetworkImage("https://assets.gopaisa.com/unsafe/0x0/https://gpcdn.ams3.cdn.digitaloceanspaces.com/deals/bigbasket-%20Buy-1-Get-1-Free-300-266-offer.jpg"))
+                      )
+                        )
+                      ],
+                    ),
+                  ),
+                  Card(
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 160,
+                          width: 110,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: NetworkImage("https://assets.gopaisa.com/unsafe/0x0/https://gpcdn.ams3.cdn.digitaloceanspaces.com/deals/bigbasket-%20Buy-1-Get-1-Free-300-266-offer.jpg"))
+                          )
+
+
+                        )
+                      ],
+                    ),
+                  ),
+                  Card(
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 160,
+                          width: 110,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(image: NetworkImage("https://assets.gopaisa.com/unsafe/0x0/https://gpcdn.ams3.cdn.digitaloceanspaces.com/deals/bigbasket-%20Buy-1-Get-1-Free-300-266-offer.jpg"))
+                      )
+                        )
+                      ],
+                    ),
+                  ),
+
+                ],
+              ),
+
 
             ]
         )
@@ -277,7 +390,10 @@ return Scaffold(
 
 
 
-    )
+    ),
+
+
 );
+
   }
 }
